@@ -55,7 +55,7 @@ int Decimal(char* bin){
 
 }
 
-char* Ascii(int dec, char* c){
+void Ascii(int dec, char* c){
     if(dec<=32){
         c = ascii[dec];
     } 
