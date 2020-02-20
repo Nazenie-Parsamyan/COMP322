@@ -107,13 +107,20 @@ void PRINT(char* bin){
         if(buf==' '){
             i++;
             binarySize++;
+            binary[i][j] = '\0';
+            j=0;
         }
         else if(x==0){
              continue;
         }
         else{
-        binary[i][j] = buf;
-        j++;
+            binary[i][j] = buf;
+            j++;
+            if(j==8){
+                binary[i][j] = '\0';
+                j=0;
+                i++;
+            }
         }
     }
     binarySize+=1;
