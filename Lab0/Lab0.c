@@ -103,7 +103,7 @@ void PRINT(char* bin){
     int j=0;
     while(x){
         x = read(fd,&buf,1);
-        printf("%c", buf);
+        
         if(buf==' '){
             i++;
             binarySize++;
