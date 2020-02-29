@@ -60,7 +60,7 @@ int main()
         PrintResult(pid, pid_wait, status);
     }
 
-        clock_time = times(process_time);
+        clock_time = times(&process_time);
 
         printf("USER: %ld, SYS: %ld\n", process_time.tms_utime, process_time.tms_stime);
         printf("CUSER: %ld, CSYS: %ld\n", process_time.tms_cutime, process_time.tms_cstime);
