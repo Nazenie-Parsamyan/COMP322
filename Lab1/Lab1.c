@@ -44,7 +44,7 @@ int main()
         PrintResult(pid, 0, 0);
         exit(EXIT_FAILURE);
     }
-    else if(pid == 0);
+    else if(pid == 0)
     {
         PrintResult(pid, 0, 0);
         exit(EXIT_SUCCESS);
