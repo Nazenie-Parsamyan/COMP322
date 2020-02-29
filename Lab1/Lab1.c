@@ -12,12 +12,10 @@ void PrintResult(int pid, int pid_wait, int status)
     {
         printf("Forking failed\n");
     }
-
     else if(pid == 0)
     {
         printf("PPID: %d, PID: %d\n", getppid(), getpid());
     }
-
     else 
     {
         printf("PPID: %d, PID: %d, CPID: %d, RETVAL: %d\n", getppid(), getpid(), pid_wait, status);
@@ -46,13 +44,11 @@ int main()
         PrintResult(pid, 0, 0);
         exit(EXIT_FAILURE);
     }
-
     else if(pid == 0);
     {
         PrintResult(pid, 0, 0);
         exit(EXIT_SUCCESS);
     }
-
     else 
     {
         int status;
