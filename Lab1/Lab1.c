@@ -66,7 +66,7 @@ int main()
         printf("CUSER: %ld, CSYS: %ld\n", process_time.tms_cutime, process_time.tms_cstime);
 
         stop = time(NULL);
-        printf("STOP: %id", stop);
+        printf("STOP: %ld", stop);
 
         exit(EXIT_SUCCESS);
 
