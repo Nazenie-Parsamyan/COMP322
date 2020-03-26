@@ -1,9 +1,9 @@
 CC=gcc
 CFLAGS=-g
-SRC=Launch.c
-OBJ=Launch.o
-SRCT=Tube.c
-OBJT=Tube.o
+SRC=launch.c
+OBJ=launch.o
+SRCT=tube.c
+OBJT=tube.o
 all:
 		$(CC) $(CFLAGS) -c $(SRC)
 		$(CC) $(CFLAGS) -o launch $(OBJ)
