@@ -5,12 +5,14 @@ int main(int argc, char *argv[])
     (void)argc;
 
     unsigned long address;
+    address = atoi(argv[1]);
+    
     unsigned long page;
     unsigned long offset;
 
     const unsigned long pagesize = 4096;
 
-    address = atoi(argv[1]);
+    
     page = address / pagesize;
     offset = address % pagesize;
 
