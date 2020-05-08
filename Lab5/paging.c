@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
@@ -6,7 +8,7 @@ int main(int argc, char *argv[])
 
     unsigned long address;
     address = atoi(argv[1]);
-    
+
     unsigned long page;
     unsigned long offset;
 
