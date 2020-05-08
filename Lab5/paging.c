@@ -4,8 +4,6 @@
 
 int main(int argc, char *argv[])
 {
-    (void)argc;
-
     unsigned long address;
     unsigned long page;
     unsigned long offset;
